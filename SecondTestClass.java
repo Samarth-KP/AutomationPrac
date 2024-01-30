@@ -17,7 +17,9 @@ public class SecondTestClass {
 		   driver.findElement(By.xpath("//input[@id='userEmail']")).sendKeys("samarthkp44@gmail.com");
 		   driver.findElement(By.xpath("//textarea[@id='currentAddress']")).sendKeys("chennai");
 		   driver.findElement(By.xpath("//textarea[@id='permanentAddress']")).sendKeys("bangalore");
-		   
+		   driver.findElement(By.xpath("//button[@id='submit']")).click();
+			   System.out.println("Hello");
+			   js.executeScript("window.scrollBy(0,1000)","");
 		   
 	}
 }
